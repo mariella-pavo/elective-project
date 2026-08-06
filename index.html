@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Learning Theories</title>
+   <link rel="stylesheet" href="css.css">
+</head>
+<body>
+   <div class="bg-mesh">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
+
+  <main class="view-container">
+
+    <section class="view active" id="view-hero">
+      <div class="hero-title-bg">LEARNING THEORIES</div>
+
+      <div class="hero-floating-info">
+        <h3></h3>
+        <h2>Five Learning Theories</h2>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-hero-pill" data-target="temi">Theories</button>
+        <button class="btn-hero-pill" data-target="storia">History</button>
+      </div>
+    </section>
+
+    <section class="view" id="view-temi">
+      <div class="horizontal-slider" id="temiTrack">
+
+        <div class="temi-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=600&q=80" alt="Storia">
+            <div class="card-hover-overlay">
+              <button class="btn-open">Learn</button>
+              <div class="btn-circle-arrow">→</div>
+            </div>
+          </div>
+          <div>
+            <div class="card-title">Cognitive Learning Theory</div>
+            <div class="card-desc">Information processing and storage in the mind are the main topics of cognitive learning theory. It places a strong emphasis on comprehending mental functions like memory, reasoning, and problem-solving.</div>
+          </div>
+        </div>
+
+        <div class="temi-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Direttori">
+            <div class="card-hover-overlay">
+              <button class="btn-open">Learn</button>
+              <div class="btn-circle-arrow">→</div>
+            </div>
+          </div>
+          <div>
+            <div class="card-title">Behaviorism Learning Theory</div>
+            <div class="card-desc">This theory responds to stimuli shape learning. Theorists such as B.F. According to Skinner, this theory places more emphasis on outward behaviors than on inward mental states.</div>
+          </div>
+        </div>
+
+        <div class="temi-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Compositori">
+            <div class="card-hover-overlay">
+              <button class="btn-open">Learn</button>
+              <div class="btn-circle-arrow">→</div>
+            </div>
+          </div>
+          <div>
+            <div class="card-title">Constructivism Learning Theory</div>
+            <div class="card-desc">Constructivism holds that learners develop their own understanding and knowledge of the world through experiences and reflection.</div>
+          </div>
+        </div>
+
+        <div class="temi-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Premi">
+            <div class="card-hover-overlay">
+              <button class="btn-open">Learn</button>
+              <div class="btn-circle-arrow">→</div>
+            </div>
+          </div>
+          <div>
+            <div class="card-title">Humanism Learning Theory</div>
+            <div class="card-desc">The development of the whole person, including emotional health and personal development, is given top priority in the humanism learning theory.</div>
+          </div>
+        </div>
+
+        <div class="temi-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80" alt="Mediazione">
+            <div class="card-hover-overlay">
+              <button class="btn-open">Learn</button>
+              <div class="btn-circle-arrow">→</div>
+            </div>
+          </div>
+          <div>
+            <div class="card-title">Connectivism Learning Theory</div>
+            <div class="card-desc">Connectivism is a more recent addition that has to do with education in the digital era. It focuses on how networks and technology make knowledge sharing and acquisition easier.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="view" id="view-storia">
+      
+      <div class="arch-container">
+        <svg class="arch-svg" viewBox="0 0 1000 500">
+          <path d="M 50 400 A 450 300 0 0 1 950 400" fill="transparent" stroke="rgba(0,0,0,0.15)" stroke-width="2" stroke-dasharray="6 6"/>
+        </svg>
+
+        <div class="timeline-nodes">
+          <div class="node" style="left: 10%; top: 68%;" data-index="0">
+            <div class="node-year">2025</div>
+            <div class="node-desc">Il riconoscimento agli ICMA</div>
+          </div>
+          <div class="node active" style="left: 50%; top: 12%;" data-index="1">
+            <div class="node-year">1935</div>
+            <div class="node-desc">La nascita dell'orchestra</div>
+          </div>
+          <div class="node" style="left: 90%; top: 68%;" data-index="2">
+            <div class="node-year">1935</div>
+            <div class="node-desc">Leopoldo Casella alla guida dell'orchestra</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="storia-content">
+        <div class="storia-year-large" id="storiaYear">1935</div>
+        <h1 class="storia-title" id="storiaTitle">La nascita dell'orchestra</h1>
+        <p class="storia-subtitle" id="storiaSub">Ora famosa come OSI</p>
+        <button class="btn-discover">Scopri</button>
+      </div>
+
+    </section>
+
+    <script>
+      const views = {
+      hero: document.getElementById('view-hero'),
+      temi: document.getElementById('view-temi'),
+      storia: document.getElementById('view-storia')
+    };
+
+    const topNav = document.getElementById('topNav');
+    const navTabs = document.querySelectorAll('.nav-tab');
+    const footerControls = document.getElementById('footerControls');
+
+    let currentView = 'hero';
+
+    function switchView(targetView) {
+      if (currentView === targetView) return;
+
+      Object.keys(views).forEach(key => {
+        views[key].classList.toggle('active', key === targetView);
+      });
+
+      if (targetView === 'hero') {
+        topNav.classList.add('hidden-nav');
+      } else {
+        topNav.classList.remove('hidden-nav');
+        navTabs.forEach(tab => {
+          tab.classList.toggle('active', tab.dataset.target === targetView);
+        });
+      }
+
+      updateFooterControls(targetView);
+
+      currentView = targetView;
+    }
+
+    document.querySelectorAll('[data-target]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget.dataset.target;
+        switchView(target);
+      });
+    });
+
+    function updateFooterControls(viewName) {
+      footerControls.innerHTML = '';
+
+      if (viewName === 'temi') {
+        footerControls.innerHTML = `
+          <div class="drag-pill">
+            <span>←</span> Trascina <span>→</span>
+          </div>
+        `;
+      } else if (viewName === 'storia') {
+        footerControls.innerHTML = `
+          <button class="nav-btn-pill" id="btnPrevStoria">← Indietro</button>
+          <div class="drag-pill" style="min-width: 60px; justify-content: center;" id="storiaYearPill">1935</div>
+          <button class="nav-btn-pill" id="btnNextStoria">Avanti →</button>
+        `;
+
+        document.getElementById('btnPrevStoria').addEventListener('click', () => changeTimelineStep(-1));
+        document.getElementById('btnNextStoria').addEventListener('click', () => changeTimelineStep(1));
+      } else {
+        footerControls.innerHTML = `
+          <div class="drag-pill">Introduzione ☰</div>
+        `;
+      }
+    }
+
+    updateFooterControls('hero');
+
+    const track = document.getElementById('temiTrack');
+    let isDragging = false;
+    let startX, currentTranslate = 0, prevTranslate = 0;
+
+    track.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      prevTranslate = currentTranslate;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const currentX = e.clientX;
+      const delta = currentX - startX;
+      currentTranslate = prevTranslate + delta;
+
+      const maxScroll = -(track.scrollWidth - window.innerWidth + 200);
+      if (currentTranslate > 0) currentTranslate = 0;
+      if (currentTranslate < maxScroll) currentTranslate = maxScroll;
+
+      track.style.transform = `translateX(${currentTranslate}px)`;
+    });
+
+    const timelineData = [
+      {
+        year: "2025",
+        title: "Il riconoscimento agli ICMA",
+        subtitle: "Premio internazionale di musica classica",
+      },
+      {
+        year: "1935",
+        title: "La nascita dell'orchestra",
+        subtitle: "Ora famosa come OSI",
+      },
+      {
+        year: "1935",
+        title: "Leopoldo Casella",
+        subtitle: "Alla guida storica dell'orchestra",
+      }
+    ];
+
+    let currentTimelineIndex = 1;
+
+    const nodes = document.querySelectorAll('.node');
+    const storiaYear = document.getElementById('storiaYear');
+    const storiaTitle = document.getElementById('storiaTitle');
+    const storiaSub = document.getElementById('storiaSub');
+
+    function updateTimelineUI(index) {
+      currentTimelineIndex = index;
+
+      nodes.forEach((node, idx) => {
+        node.classList.toggle('active', idx === index);
+      });
+
+      const data = timelineData[index];
+      storiaYear.textContent = data.year;
+      storiaTitle.textContent = data.title;
+      storiaSub.textContent = data.subtitle;
+
+      const pill = document.getElementById('storiaYearPill');
+      if (pill) pill.textContent = data.year;
+    }
+
+    function changeTimelineStep(direction) {
+      let newIndex = currentTimelineIndex + direction;
+      if (newIndex < 0) newIndex = timelineData.length - 1;
+      if (newIndex >= timelineData.length) newIndex = 0;
+      updateTimelineUI(newIndex);
+    }
+
+    nodes.forEach(node => {
+      node.addEventListener('click', (e) => {
+        const idx = parseInt(e.currentTarget.dataset.index);
+        updateTimelineUI(idx);
+      });
+    });
+    </script>
+
+  </main>
+</body>
+</html>
