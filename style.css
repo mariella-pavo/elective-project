@@ -11,6 +11,7 @@ body {
     overflow: hidden;
 }
 
+
 #welcome-screen {
     width: 100%;
     height: 100vh;
@@ -51,6 +52,7 @@ body {
     transform: scale(0.97);
 }
 
+
 #interactive-screen {
     display: none;
     width: 100%;
@@ -74,7 +76,6 @@ body {
     opacity: 0;
 }
 
-//bubbles
 .speech {
     position: absolute;
     background: #fff;
@@ -103,7 +104,6 @@ body {
     height: 21.2%;
 }
 
-speaker labels
 .name {
     position: absolute;
     top: -19px;
@@ -126,7 +126,6 @@ speaker labels
     right: 80px;
 }
 
-images
 .cat {
     position: absolute;
     width: clamp(75px, 14vw, 140px);
@@ -146,7 +145,6 @@ images
     left: 2%;
 }
 
-
 .continue {
     position: absolute;
     bottom: 4.5%;
@@ -157,7 +155,6 @@ images
     white-space: nowrap;
 }
 
-/* MOBILE LAYOUT */
 @media (max-width: 500px) {
     .speech-top {
         left: 7%;
